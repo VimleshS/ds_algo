@@ -11,6 +11,17 @@ import (
 )
 
 func main() {
+	testTrees()
+	return
+	q := Queue{}
+	q.Add("Hello")
+	q.Add("Vimlesh")
+	q.Add("Sharma")
+	q.PrintQueue()
+	return
+
+	testLinkedList()
+	return
 	bs := []int{150, 40, 6, 2, 7, 10, 100, 2}
 	fmt.Println(mergesort.MergeSort(bs))
 	return
