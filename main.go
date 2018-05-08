@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 
+	"github.com/VimleshS/ds_algo/graph"
+
 	"github.com/VimleshS/ds_algo/binarysearch"
 	"github.com/VimleshS/ds_algo/bubblesort"
 	"github.com/VimleshS/ds_algo/fib"
@@ -11,6 +13,11 @@ import (
 )
 
 func main() {
+
+	graph.TopologicalSort()
+
+	return
+
 	testTrees()
 	return
 	q := Queue{}
