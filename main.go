@@ -9,6 +9,7 @@ import (
 	"github.com/VimleshS/ds_algo/bubblesort"
 	"github.com/VimleshS/ds_algo/fib"
 	Vheap "github.com/VimleshS/ds_algo/heap"
+	Iheap "github.com/VimleshS/ds_algo/intheap"
 	"github.com/VimleshS/ds_algo/mergesort"
 	"github.com/VimleshS/ds_algo/quicksort"
 )
@@ -17,19 +18,40 @@ func main() {
 
 	h := Vheap.NewHeap()
 	h.Add(34)
-	h.Add(3)
-	h.Add(31)
-	h.Add(30)
-	h.Add(20)
 	h.Add(1)
-	fmt.Println(h)
-	fmt.Println(h.Peek())
-	fmt.Println(h.Peek())
-	fmt.Println(h.Peek())
-	fmt.Println(h.Peek())
-	fmt.Println(h.Peek())
 	fmt.Println(h.Peek())
 	fmt.Println(h)
+
+	minHeap := Iheap.NewHeap(Iheap.MIN)
+	minHeap.Add(34)
+	minHeap.Add(3)
+	minHeap.Add(31)
+	minHeap.Add(30)
+	minHeap.Add(20)
+	minHeap.Add(1)
+	fmt.Println(h)
+	fmt.Println(minHeap.Peek())
+	fmt.Println(minHeap.Peek())
+	fmt.Println(minHeap.Peek())
+	fmt.Println(minHeap.Peek())
+	fmt.Println(minHeap.Peek())
+	fmt.Println(minHeap.Peek())
+	fmt.Println(minHeap)
+	maxHeap := Iheap.NewHeap(Iheap.MAX)
+	maxHeap.Add(34)
+	maxHeap.Add(3)
+	maxHeap.Add(31)
+	maxHeap.Add(30)
+	maxHeap.Add(20)
+	maxHeap.Add(1)
+	fmt.Println(h)
+	fmt.Println(maxHeap.Peek())
+	fmt.Println(maxHeap.Peek())
+	fmt.Println(maxHeap.Peek())
+	fmt.Println(maxHeap.Peek())
+	fmt.Println(maxHeap.Peek())
+	fmt.Println(maxHeap.Peek())
+	fmt.Println(maxHeap)
 	return
 
 	graph.TopologicalSort()
