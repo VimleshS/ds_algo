@@ -8,11 +8,29 @@ import (
 	"github.com/VimleshS/ds_algo/binarysearch"
 	"github.com/VimleshS/ds_algo/bubblesort"
 	"github.com/VimleshS/ds_algo/fib"
+	Vheap "github.com/VimleshS/ds_algo/heap"
 	"github.com/VimleshS/ds_algo/mergesort"
 	"github.com/VimleshS/ds_algo/quicksort"
 )
 
 func main() {
+
+	h := Vheap.NewHeap()
+	h.Add(34)
+	h.Add(3)
+	h.Add(31)
+	h.Add(30)
+	h.Add(20)
+	h.Add(1)
+	fmt.Println(h)
+	fmt.Println(h.Peek())
+	fmt.Println(h.Peek())
+	fmt.Println(h.Peek())
+	fmt.Println(h.Peek())
+	fmt.Println(h.Peek())
+	fmt.Println(h.Peek())
+	fmt.Println(h)
+	return
 
 	graph.TopologicalSort()
 
