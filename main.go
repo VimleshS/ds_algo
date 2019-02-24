@@ -10,12 +10,37 @@ import (
 	"github.com/VimleshS/ds_algo/fib"
 	Vheap "github.com/VimleshS/ds_algo/heap"
 	Iheap "github.com/VimleshS/ds_algo/intheap"
+	"github.com/VimleshS/ds_algo/linkedlist"
 	"github.com/VimleshS/ds_algo/mergesort"
 	"github.com/VimleshS/ds_algo/quicksort"
+	"github.com/VimleshS/ds_algo/stack"
 )
 
 func main() {
+	sta := stack.Stack{}
+	sta.Push(3)
+	sta.Push(2)
+	sta.Push(7)
+	sta.Push(9)
+	sta.Print()
+	fmt.Println("--->", sta.Pop())
+	sta.Push(9993)
+	sta.Print()
 
+	return
+
+	l := &linkedlist.LinkedList{}
+	l.Enqueue(3)
+	l.Enqueue(13)
+	l.Enqueue(31)
+	l.Enqueue(113)
+	l.Enqueue(30)
+	l.Print()
+	p, _ := l.Dequeue()
+	fmt.Println("de---", p)
+	l.Enqueue(111130)
+	l.Print()
+	return
 	h := Vheap.NewHeap()
 	h.Add(34)
 	h.Add(1)
