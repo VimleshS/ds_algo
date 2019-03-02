@@ -1,5 +1,7 @@
 package bubblesort
 
+import "fmt"
+
 func BSort(slice []int) bool {
 	//Base Case
 	sorted := true
@@ -20,4 +22,16 @@ func BSort(slice []int) bool {
 
 	//Returns from a call stack
 	return sorted
+}
+
+func BSort_2(slice []int) {
+	for i := 0; i < len(slice); i++ {
+		for j := 0; j < len(slice); j++ {
+			if slice[i] < slice[j] {
+				slice[i], slice[j] = slice[j], slice[i]
+			}
+		}
+	}
+
+	fmt.Println(slice)
 }
