@@ -37,6 +37,17 @@ func main() {
 	fmt.Println(clist.Dequeue())
 	fmt.Println(clist.Dequeue())
 	fmt.Println(clist.Dequeue())
+	clist.Enqueue(99)
+	clist.Enqueue(89)
+	clist.Enqueue(98)
+	clist.Enqueue(898)
+	clist.Enqueue(900)
+	fmt.Println(clist.Dequeue())
+	fmt.Println(clist.Dequeue())
+	fmt.Println(clist.Dequeue())
+	fmt.Println(clist.Dequeue())
+	fmt.Println(clist.Dequeue())
+	fmt.Println(clist.Dequeue())
 
 	return
 

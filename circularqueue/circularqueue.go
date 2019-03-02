@@ -12,8 +12,11 @@ type circularqueue struct {
 }
 
 //No of element == Maxsize -1
-func NewCircularQueue(maxsise int) *circularqueue {
-	return &circularqueue{maxsize: maxsise}
+func NewCircularQueue(maxsize int) *circularqueue {
+	return &circularqueue{
+		store:   make([]int, maxsize),
+		maxsize: maxsize,
+	}
 }
 
 func (c *circularqueue) Enqueue(v int) {
@@ -22,7 +25,8 @@ func (c *circularqueue) Enqueue(v int) {
 		return
 	}
 
-	c.store = append(c.store, v)
+	//c.store = append(c.store, v)
+	c.store[c.tail] = v
 	c.tail = (c.tail + 1) % c.maxsize
 }
 
