@@ -7,6 +7,7 @@ import (
 
 	"github.com/VimleshS/ds_algo/binarysearch"
 	"github.com/VimleshS/ds_algo/bubblesort"
+	"github.com/VimleshS/ds_algo/circularlinkedlist"
 	"github.com/VimleshS/ds_algo/fib"
 	Vheap "github.com/VimleshS/ds_algo/heap"
 	Iheap "github.com/VimleshS/ds_algo/intheap"
@@ -17,6 +18,28 @@ import (
 )
 
 func main() {
+	clist := circularlinkedlist.NewCircularList(5)
+	clist.Enqueue(1)
+	clist.Enqueue(12)
+	clist.Enqueue(5)
+	clist.Enqueue(122)
+	clist.Enqueue(232)
+	fmt.Println(clist.Dequeue())
+	// clist.Enqueue(232)
+	// clist.Enqueue(89)
+	// fmt.Println(clist.Dequeue())
+	// clist.Enqueue(78)
+	// clist.Enqueue(189)
+	// clist.Enqueue(178)
+	fmt.Println(clist.Dequeue())
+	fmt.Println(clist.Dequeue())
+	fmt.Println(clist.Dequeue())
+	fmt.Println(clist.Dequeue())
+	fmt.Println(clist.Dequeue())
+	fmt.Println(clist.Dequeue())
+
+	return
+
 	sta := stack.Stack{}
 	sta.Push(3)
 	sta.Push(2)
