@@ -1,10 +1,10 @@
-package circularlinkedlist
+package circularqueue
 
 //https://www.pythoncentral.io/circular-queue/
 
 import "fmt"
 
-type circularLinkedlist struct {
+type circularqueue struct {
 	store   []int
 	front   int
 	tail    int
@@ -12,11 +12,11 @@ type circularLinkedlist struct {
 }
 
 //No of element == Maxsize -1
-func NewCircularList(maxsise int) *circularLinkedlist {
-	return &circularLinkedlist{maxsize: maxsise}
+func NewCircularQueue(maxsise int) *circularqueue {
+	return &circularqueue{maxsize: maxsise}
 }
 
-func (c *circularLinkedlist) Enqueue(v int) {
+func (c *circularqueue) Enqueue(v int) {
 	if c.Size() == c.maxsize-1 {
 		fmt.Printf("cannot add %v size is full \n", v)
 		return
@@ -26,7 +26,7 @@ func (c *circularLinkedlist) Enqueue(v int) {
 	c.tail = (c.tail + 1) % c.maxsize
 }
 
-func (c *circularLinkedlist) Dequeue() int {
+func (c *circularqueue) Dequeue() int {
 	if c.Size() <= 0 {
 		fmt.Println("No more element to pop")
 		return -1
@@ -38,7 +38,7 @@ func (c *circularLinkedlist) Dequeue() int {
 }
 
 //Actual filled size
-func (c *circularLinkedlist) Size() int {
+func (c *circularqueue) Size() int {
 	if c.tail >= c.front {
 		return c.tail - c.front
 	}

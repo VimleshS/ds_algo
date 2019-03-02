@@ -7,7 +7,7 @@ import (
 
 	"github.com/VimleshS/ds_algo/binarysearch"
 	"github.com/VimleshS/ds_algo/bubblesort"
-	"github.com/VimleshS/ds_algo/circularlinkedlist"
+	"github.com/VimleshS/ds_algo/circularqueue"
 	"github.com/VimleshS/ds_algo/fib"
 	Vheap "github.com/VimleshS/ds_algo/heap"
 	Iheap "github.com/VimleshS/ds_algo/intheap"
@@ -18,7 +18,7 @@ import (
 )
 
 func main() {
-	clist := circularlinkedlist.NewCircularList(5)
+	clist := circularqueue.NewCircularQueue(5)
 	clist.Enqueue(1)
 	clist.Enqueue(12)
 	clist.Enqueue(5)
