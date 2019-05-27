@@ -18,6 +18,12 @@ import (
 )
 
 func main() {
+	t := []int{2, 5, 7, 8, 9, 14, 18, 500, 571, 600, 601, 700, 4001}
+	fmt.Println(binarysearch.BSort{}.Binarysearch(t, 0, len(t)-1, 18))
+	return
+	bubblesort.BSort_2([]int{33, 1, 3, 9, 5, 99})
+	return
+
 	clist := circularqueue.NewCircularQueue(5)
 	clist.Enqueue(1)
 	clist.Enqueue(12)

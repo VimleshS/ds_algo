@@ -14,7 +14,7 @@ func (b BSort) Binarysearch(slice []int, left, right, elem int) bool {
 	if slice[mid] > elem {
 		return b.Binarysearch(slice, left, mid-1, elem)
 	}
-	return b.Binarysearch(slice, mid+1, right, elem)
+	return b.Binarysearch(slice, mid, right, elem)
 }
 
 //O(logN)
