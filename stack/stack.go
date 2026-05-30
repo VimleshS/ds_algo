@@ -16,7 +16,7 @@ func (s *Stack) Push(data int) {
 	s.top = d
 }
 
-//instead of err return -1 for not found
+// instead of err return -1 for not found
 func (s *Stack) Pop() int {
 	if s.top == nil {
 		return -1

@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/VimleshS/ds_algo/graph"
+	"github.com/vimleshS/ds_algo/bst"
 
 	"github.com/VimleshS/ds_algo/binarysearch"
 	"github.com/VimleshS/ds_algo/bubblesort"
@@ -18,6 +19,17 @@ import (
 )
 
 func main() {
+
+	b := bst.NewBST()
+	b.Insert(2)
+	b.Insert(1)
+	b.Insert(3)
+
+	fmt.Println(b.Root.Left.Value)
+	fmt.Println(b.Root.Value)
+	fmt.Println(b.Root.Right.Value)
+	return
+
 	t := []int{2, 5, 7, 8, 9, 14, 18, 500, 571, 600, 601, 700, 4001}
 	fmt.Println(binarysearch.BSort{}.Binarysearch(t, 0, len(t)-1, 18))
 	return

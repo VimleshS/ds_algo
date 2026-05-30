@@ -1,5 +1,7 @@
 package fib
 
+// import "github.com/vimleshS/ds_algo/fib"
+
 //Prove for base only and rest assume it all works for others
 // 2 Base case
 
